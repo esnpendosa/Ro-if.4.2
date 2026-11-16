@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Agrovoice menghubungkan informasi dan teknologi untuk sektor pertanian, peternakan, dan perikanan.">
+    <meta property="og:title" content="Agrovoice - Pertanian, Peternakan, dan Perikanan">
+    <meta property="og:description" content="Informasi dan teknologi untuk sektor pertanian, peternakan, dan perikanan.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/images/app-screen.jpg">
+    <link rel="icon" type="image/png" href="./assets/images/logo-agrovoice.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="./css/site-theme.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="./js/home.js" defer></script>
+    <title>Agrovoice - Teknologi untuk Pertanian, Peternakan, dan Perikanan</title>
+</head>
+<body data-theme="tani">
+<header><div class="w">
+    <a class="logo" href="#beranda"><img src="./assets/images/logo-agrovoice.png" alt="Agrovoice"></a>
+    <div class="theme-picker" role="group" aria-label="Pilih tema sektor">
+        <button type="button" class="theme-button" data-theme-choice="tani" aria-pressed="true">Pertanian</button>
+        <button type="button" class="theme-button" data-theme-choice="ternak" aria-pressed="false">Peternakan</button>
+        <button type="button" class="theme-button" data-theme-choice="ikan" aria-pressed="false">Perikanan</button>
+    </div>
+    <nav aria-label="Navigasi utama">
+        <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+        <div class="nav-links" id="site-menu">
+            <a href="#tentang">Profil</a>
+            <a href="#informasi">Informasi</a>
+            <a href="#fitur">Fitur</a>
+            <a href="#alur">Alur</a>
+            <a href="#galeri">Flyer</a>
+            <a href="berita.html">Berita</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <a class="cta-n" href="#kontak">Hubungi</a>
+    </nav>
+</div></header>
+
+<main>
+<div class="hero" id="beranda"><div class="w hero-in">
+    <div>
+        <span class="pill">Wawasan lintas sektor</span>
+        <h1 id="hero-title">Informasi untuk <em>tumbuh bersama.</em></h1>
+        <p class="lead" id="hero-lead">Jelajahi wawasan seputar pertanian, peternakan, dan perikanan.</p>
+        <div class="acts"><a class="btn" href="#informasi">Jelajahi sektor</a><a class="btn d" href="#galeri">Lihat flyer</a></div>
+    </div>
+    <div class="stage">
+        <div class="stage-card">
+            <div class="stage-sector-picker" role="group" aria-label="Pilih sektor ilustrasi">
+                <button class="stage-sector-button" type="button" data-theme-choice="tani" aria-label="Pilih tema Pertanian" aria-pressed="true"><span aria-hidden="true">🌾</span></button>
+                <button class="stage-sector-button" type="button" data-theme-choice="ternak" aria-label="Pilih tema Peternakan" aria-pressed="false"><span aria-hidden="true">🐄</span></button>
+                <button class="stage-sector-button" type="button" data-theme-choice="ikan" aria-label="Pilih tema Perikanan" aria-pressed="false"><span aria-hidden="true">🐟</span></button>
+            </div>
+            <div class="stage-voice-visual" aria-hidden="true">
+                <span class="stage-wave"></span>
+                <span class="stage-wave"></span>
+                <span class="stage-wave"></span>
+                <span class="stage-voice-orb">
+                    <svg viewBox="0 0 48 48" focusable="false">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                            <rect x="18" y="5" width="12" height="23" rx="6" />
+                            <path d="M12 21a12 12 0 0 0 24 0M24 33v9m-8 0h16" />
+                        </g>
+                    </svg>
+                </span>
+            </div>
+            <svg class="stage-scene stage-scene--tani" viewBox="0 0 320 140" aria-hidden="true" focusable="false">
+                <use class="plant sway" href="#ill-plant" x="85" y="0" width="90" height="124" />
+                <use class="plant sway sway-late" href="#ill-plant" x="160" y="30" width="72" height="100" />
+            </svg>
+            <svg class="stage-scene stage-scene--ternak" viewBox="0 0 340 140" aria-hidden="true" focusable="false">
+                <use class="animal-cow float" href="#ill-cow" x="12" y="18" width="170" height="113" />
+                <use class="animal-chicken float float-late" href="#ill-chicken" x="174" y="55" width="78" height="72" />
+                <use class="animal-duck float" href="#ill-duck" x="242" y="62" width="88" height="72" />
+            </svg>
+            <svg class="stage-scene stage-scene--ikan" viewBox="0 0 340 140" aria-hidden="true" focusable="false">
+                <use class="fish swim" href="#ill-fish" x="4" y="26" width="126" height="84" />
+                <use class="turtle float" href="#ill-turtle" x="106" y="53" width="112" height="77" />
+                <use class="coral sway" href="#ill-coral" x="241" y="14" width="88" height="116" />
+            </svg>
+        </div>
+    </div>
+</div>
+
+<svg class="illustration-definitions" aria-hidden="true" focusable="false">
+    <symbol id="ill-plant" viewBox="0 0 120 150">
+        <path d="M58 144c4-38 2-68 1-99" fill="none" stroke="var(--ink)" stroke-linecap="round" stroke-width="5"/>
+        <path d="M58 91C34 87 20 70 17 49c23 1 39 15 43 39Zm2-21c1-23 13-39 34-48 2 22-9 40-34 51Zm-1 48c-20-2-34-14-42-34 21-1 37 10 44 31Z" fill="currentColor"/>
+        <path d="M18 146h86" fill="none" stroke="var(--ink)" stroke-linecap="round" stroke-width="5"/>
+    </symbol>
+    <symbol id="ill-cow" viewBox="0 0 180 120">
+        <path d="M43 32 27 16l-7 25m116-9 17-16 5 26" fill="currentColor" stroke="var(--ink)" stroke-linejoin="round" stroke-width="4"/>
+        <path d="M41 34c10-15 76-16 91 0l11 42c2 14-9 23-22 23H47c-14 0-23-9-20-22Z" fill="currentColor" stroke="var(--ink)" stroke-width="4"/>
+        <path d="M53 40c8-5 18-3 21 5l-4 14-18 2-7-8Zm43 30c5-7 20-7 25 0l-4 17-17 2-8-9Z" fill="var(--ink)"/>
+        <path d="M65 98v17m51-17v17m-73-17v17m73-17v17" stroke="var(--ink)" stroke-linecap="round" stroke-width="7"/>
+        <path d="M52 56c-17 2-25 16-21 27 3 8 12 11 22 8 9-3 13-10 13-18" fill="currentColor" stroke="var(--ink)" stroke-width="4"/>
+        <circle cx="48" cy="72" r="2.5" fill="var(--ink)"/>
+    </symbol>
+    <symbol id="ill-goat" viewBox="0 0 150 130">
+        <path d="M45 37 35 13l20 16m54 8 12-24-21 16" fill="currentColor" stroke="var(--ink)" stroke-linejoin="round" stroke-width="4"/>
+        <path d="M39 37c15-13 65-13 78 2l-4 39c-2 17-14 25-35 25H55c-16 0-24-9-23-24Z" fill="currentColor" stroke="var(--ink)" stroke-width="4"/>
+        <path d="M51 47c-10-12-17-10-20 1m75 0c11-12 18-10 21 1" fill="none" stroke="var(--ink)" stroke-linecap="round" stroke-width="5"/>
+        <path d="M52 99v22m48-22v22m-42-51c2-7 12-7 14 0m18 0c2-7 12-7 14 0" fill="none" stroke="var(--ink)" stroke-linecap="round" stroke-width="5"/>
+        <path d="M68 83c5 7 16 7 21 0" fill="none" stroke="var(--ink)" stroke-linecap="round" stroke-width="3"/>
+    </symbol>
+    <symbol id="ill-chicken" viewBox="0 0 120 110">
+        <path d="M31 83c-7-28 4-54 29-59 23-5 39 12 39 35 0 24-17 37-41 37H40Z" fill="currentColor" stroke="var(--ink)" stroke-width="4"/>
+        <path d="m88 31 12-12 3 16 13-4-10 17m-55 54v9m22-9v9" fill="none" stroke="var(--ink)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path d="m99 43 18 7-18 8Z" fill="var(--art-coral)"/>
+        <circle cx="92" cy="39" r="3" fill="var(--ink)"/>
+        <path d="M25 67 8 57l5 22-11 10 24-2" fill="currentColor" stroke="var(--ink)" stroke-linejoin="round" stroke-width="4"/>
+    </symbol>
+    <symbol id="ill-duck" viewBox="0 0 130 105">
+        <path d="M23 77c0-20 19-35 45-35 15 0 24 6 31 16 8 11 3 27-9 34H41c-11 0-18-5-18-15Z" fill="currentColor" stroke="var(--ink)" stroke-width="4"/>
+        <path d="M65 44c-3-15 4-27 17-29 12-2 21 6 21 17 0 8-5 13-11 17m-50 42-4 8m37-8 4 8" fill="none" stroke="var(--ink)" stroke-linecap="round" stroke-width="5"/>
+        <path d="m100 33 23 5-23 8Z" fill="var(--art-coral)"/>
+        <circle cx="91" cy="29" r="3" fill="var(--ink)"/>
+    </symbol>
+    <symbol id="ill-fish" viewBox="0 0 150 100">
+        <path d="M25 50C42 23 92 19 119 48c-24 34-71 36-94 2L8 72V29Z" fill="currentColor" stroke="var(--ink)" stroke-linejoin="round" stroke-width="4"/>
+        <path d="m62 30 16 20-17 19" fill="none" stroke="var(--ink)" stroke-width="3"/>
+        <circle cx="101" cy="44" r="4" fill="var(--ink)"/>
+    </symbol>
+    <symbol id="ill-turtle" viewBox="0 0 160 110">
+        <path d="M34 59c3-26 22-40 50-40s48 14 51 40c-4 22-22 32-51 32S38 81 34 59Z" fill="currentColor" stroke="var(--ink)" stroke-width="4"/>
+        <path d="M54 57c5-17 17-25 31-25s27 8 32 25c-5 16-17 24-32 24S59 73 54 57Z" fill="none" stroke="var(--ink)" stroke-width="3"/>
+        <path d="m42 39-16-13-5 24m104-11 16-13 5 24M52 85l-8 18m70-18 8 18" fill="currentColor" stroke="var(--ink)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <circle cx="143" cy="56" r="13" fill="currentColor" stroke="var(--ink)" stroke-width="4"/>
+        <circle cx="147" cy="53" r="2.5" fill="var(--ink)"/>
+    </symbol>
+    <symbol id="ill-coral" viewBox="0 0 140 130">
+        <path d="M23 124V79l-13-18m13 36 24-26V41m-24 45L5 76m42 14 21-19V48m-21 30L34 64m34 31 23-20V32m-23 36L55 52m47 75V84l18-16m-18 37-22-20m22-1 17-17m-17 45 13-9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+        <path d="M6 126h126" fill="none" stroke="var(--ink)" stroke-linecap="round" stroke-width="5"/>
+    </symbol>
+    <symbol id="ill-bubble" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="3"/>
+        <circle cx="9" cy="9" r="2" fill="currentColor"/>
+    </symbol>
+</svg>
+
+<svg class="hero-scene hero-scene--tani" viewBox="0 0 1440 190" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <use class="plant sway" href="#ill-plant" x="85" y="46" width="100" height="130"/>
+    <use class="plant sway sway-late" href="#ill-plant" x="245" y="73" width="74" height="96"/>
+    <use class="plant sway" href="#ill-plant" x="1120" y="60" width="86" height="112"/>
+    <use class="plant sway sway-late" href="#ill-plant" x="1300" y="28" width="110" height="144"/>
+</svg>
+<svg class="hero-scene hero-scene--ternak" viewBox="0 0 1440 190" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <use class="animal animal-cow float" href="#ill-cow" x="90" y="48" width="180" height="120"/>
+    <use class="animal animal-goat float float-late" href="#ill-goat" x="375" y="52" width="140" height="120"/>
+    <use class="animal animal-chicken float" href="#ill-chicken" x="970" y="82" width="92" height="84"/>
+    <use class="animal animal-duck float float-late" href="#ill-duck" x="1180" y="78" width="110" height="90"/>
+</svg>
+<svg class="hero-scene hero-scene--ikan" viewBox="0 0 1440 190" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <use class="fish swim" href="#ill-fish" x="92" y="42" width="130" height="88"/>
+    <use class="turtle float" href="#ill-turtle" x="470" y="74" width="130" height="90"/>
+    <use class="coral sway" href="#ill-coral" x="890" y="51" width="105" height="124"/>
+    <use class="fish swim swim-late" href="#ill-fish" x="1160" y="65" width="115" height="76"/>
+    <use class="bubble bubble-one" href="#ill-bubble" x="310" y="107" width="22" height="22"/>
+    <use class="bubble bubble-two" href="#ill-bubble" x="720" y="117" width="16" height="16"/>
+    <use class="bubble bubble-one" href="#ill-bubble" x="1340" y="96" width="20" height="20"/>
+</svg>
+</div>
+
+<!-- SECTION: TENTANG -->
+<section class="about-section" id="tentang">
+    <div class="w">
+        <div class="head">
+            <span class="pill">Tentang Agrovoice</span>
+            <h2>Apa itu Agrovoice?</h2>
+            <p>Agrovoice adalah platform yang membantu pelaku sektor pertanian, peternakan, dan perikanan mencatat dan melaporkan kegiatan lapangan dengan lebih mudah, cukup dengan berbicara.</p>
+        </div>
+
+        <div class="about-tabs" role="tablist" aria-label="Pilih sektor Agrovoice">
+            <button class="about-tab" id="about-tab-tani" type="button" role="tab" aria-selected="true" aria-controls="about-panel-tani" tabindex="0" data-theme-choice="tani">
+                <span class="about-tab-icon" aria-hidden="true">🌾</span>
+                <span class="about-tab-label">Pertanian</span>
+            </button>
+            <button class="about-tab" id="about-tab-ternak" type="button" role="tab" aria-selected="false" aria-controls="about-panel-ternak" tabindex="-1" data-theme-choice="ternak">
+                <span class="about-tab-icon" aria-hidden="true">🐄</span>
+                <span class="about-tab-label">Peternakan</span>
+            </button>
+            <button class="about-tab" id="about-tab-ikan" type="button" role="tab" aria-selected="false" aria-controls="about-panel-ikan" tabindex="-1" data-theme-choice="ikan">
+                <span class="about-tab-icon" aria-hidden="true">🐟</span>
+                <span class="about-tab-label">Perikanan</span>
+            </button>
+        </div>
+
+        <div class="about-panels">
+            <div class="about-panel" id="about-panel-tani" role="tabpanel" aria-labelledby="about-tab-tani" tabindex="0" data-about-panel="tani">
+                <h3>Untuk petani dan penyuluh pertanian</h3>
+                <p>Catat kondisi lahan, tanaman, dan kegiatan di lapangan tanpa repot mengetik. Informasi tersimpan rapi sehingga mudah dipantau dan dilaporkan.</p>
+                <ul>
+                    <li>Pencatatan kegiatan lahan dan tanaman</li>
+                    <li>Laporan lapangan lebih cepat</li>
+                    <li>Data tersimpan rapi dan mudah dicari</li>
+                </ul>
+            </div>
+            <div class="about-panel" id="about-panel-ternak" role="tabpanel" aria-labelledby="about-tab-ternak" tabindex="0" data-about-panel="ternak" hidden>
+                <h3>Untuk peternak dan petugas peternakan</h3>
+                <p>Catat kegiatan dan kondisi ternak seperti sapi, kambing, ayam, dan bebek dengan cepat, sehingga perkembangan ternak lebih mudah dipantau.</p>
+                <ul>
+                    <li>Pencatatan kegiatan dan kondisi ternak</li>
+                    <li>Laporan kunjungan lebih praktis</li>
+                    <li>Riwayat data ternak tersimpan rapi</li>
+                </ul>
+            </div>
+            <div class="about-panel" id="about-panel-ikan" role="tabpanel" aria-labelledby="about-tab-ikan" tabindex="0" data-about-panel="ikan" hidden>
+                <h3>Untuk pembudidaya dan pelaku perikanan</h3>
+                <p>Catat kegiatan budidaya dan hasil perikanan dengan mudah, dari kolam hingga tambak, agar kondisi usaha selalu terpantau.</p>
+                <ul>
+                    <li>Pencatatan kegiatan budidaya</li>
+                    <li>Laporan hasil dan kondisi usaha</li>
+                    <li>Data terkumpul dalam satu tempat</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="about-closing">Satu platform untuk tiga sektor, dirancang agar sederhana dipakai di lapangan.</p>
+    </div>
+</section>
+
+<!-- SECTION: INFORMASI -->
+<section class="information-section" id="informasi">
+    <div class="w">
+        <div class="head">
+            <span class="pill">Informasi</span>
+            <h2>Informasi <em>Agrovoice</em></h2>
+        </div>
+
+        <div class="information-grid">
+            <article class="k feature-card info-card" tabindex="0">
+                <span class="icon-badge" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" focusable="false">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4">
+                            <rect x="14" y="5" width="20" height="38" rx="4" />
+                            <path d="M22 10h4m-3 27h2" />
+                            <rect x="22" y="16" width="4" height="9" rx="2" />
+                            <path d="M19 24a5 5 0 0 0 10 0m-5 5v3" />
+                        </g>
+                    </svg>
+                </span>
+                <h3>Aplikasi untuk pelaku lapangan</h3>
+                <p>Mengubah percakapan suara di lapangan menjadi catatan dan laporan kegiatan di sektor pertanian, peternakan, dan perikanan.</p>
+            </article>
+
+            <article class="k feature-card info-card" tabindex="0">
+                <span class="icon-badge" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" focusable="false">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4">
+                            <circle cx="18" cy="16" r="6" />
+                            <circle cx="33" cy="18" r="5" />
+                            <path d="M6 39a12 12 0 0 1 24 0m0-12a9 9 0 0 1 12 9" />
+                        </g>
+                    </svg>
+                </span>
+                <h3>Untuk siapa?</h3>
+                <div class="info-theme-copy">
+                    <p data-info-theme="tani">Petani, kelompok tani, dan penyuluh pertanian, serta koordinator dan pimpinan dinas yang butuh data lapangan yang cepat dan faktual.</p>
+                    <p data-info-theme="ternak" hidden>Peternak, kelompok ternak, dan petugas peternakan, serta koordinator dan pimpinan dinas yang butuh data lapangan yang cepat dan faktual.</p>
+                    <p data-info-theme="ikan" hidden>Pembudidaya ikan, kelompok pembudidaya, dan penyuluh perikanan, serta koordinator dan pimpinan dinas yang butuh data lapangan yang cepat dan faktual.</p>
+                </div>
+            </article>
+
+            <article class="k feature-card info-card" tabindex="0">
+                <span class="icon-badge" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" focusable="false">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4">
+                            <path d="M24 5 39 11v10c0 10-6 17-15 22C15 38 9 31 9 21V11z" />
+                            <path d="m17 24 5 5 10-11" />
+                        </g>
+                    </svg>
+                </span>
+                <h3>Nilai utama</h3>
+                <p>Voice-first, bisa dipakai tanpa sinyal (offline-first), memahami istilah lokal, dan bukti kegiatan yang otentik lewat foto, lokasi, dan waktu.</p>
+            </article>
+        </div>
+
+        <div class="info-callout">
+            <p>Satu platform untuk pertanian, peternakan, dan perikanan.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: FITUR -->
+<section class="cream" id="fitur"><div class="w">
+    <div class="head">
+        <span class="pill">Fitur</span>
+        <h2>Fitur Agrovoice <em>lintas sektor</em></h2>
+        <p>Fitur untuk mendukung pencatatan, pemantauan, dan pelaporan kegiatan lapangan di sektor pertanian, peternakan, dan perikanan.</p>
+    </div>
+    <div class="grid feature-grid">
+        <!-- 1. Voice-to-Report -->
+        <article class="k feature-card" tabindex="0">
+            <span class="icon-badge" aria-hidden="true">
+                <svg class="feature-icon" viewBox="0 0 48 48" focusable="false">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                        <rect x="18" y="5" width="12" height="23" rx="6" />
+                        <path d="M12 21a12 12 0 0 0 24 0M24 33v9m-8 0h16" />
+                    </g>
+                </svg>
+            </span>
+            <h3>Voice-to-Report</h3>
+            <p>Bicara seperti biasa, ucapan Anda otomatis menjadi laporan terstruktur.</p>
+            <div class="feature-examples">
+                <p data-feature-example="tani"><strong>Contoh:</strong> kondisi lahan dan tanaman</p>
+                <p data-feature-example="ternak" hidden><strong>Contoh:</strong> kondisi dan kegiatan ternak</p>
+                <p data-feature-example="ikan" hidden><strong>Contoh:</strong> kegiatan budidaya dan hasil panen</p>
+            </div>
+        </article>
+
+        <!-- 2. Paham Bahasa Lokal -->
+        <article class="k feature-card" tabindex="0">
+            <span class="icon-badge" aria-hidden="true">
+                <svg class="feature-icon" viewBox="0 0 48 48" focusable="false">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                        <path d="M6 9h36v25H22l-10 8v-8H6z" />
+                        <path d="M14 17h20M14 24h15" />
+                    </g>
+                </svg>
+            </span>
+            <h3>Paham Bahasa Lokal</h3>
+            <p>Mengenali istilah dan sebutan lokal yang dipakai di lapangan.</p>
+            <div class="feature-examples">
+                <p data-feature-example="tani"><strong>Contoh:</strong> sebutan tanaman dan hama setempat</p>
+                <p data-feature-example="ternak" hidden><strong>Contoh:</strong> sebutan ternak dan penyakit setempat</p>
+                <p data-feature-example="ikan" hidden><strong>Contoh:</strong> sebutan jenis ikan dan budidaya setempat</p>
+            </div>
+        </article>
+
+        <!-- 3. Form Kegiatan Terpandu -->
+        <article class="k feature-card" tabindex="0">
+            <span class="icon-badge" aria-hidden="true">
+                <svg class="feature-icon" viewBox="0 0 48 48" focusable="false">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                        <path d="M16 7h-5v35h26V7h-5M17 5h14v7H17z" />
+                        <path d="m16 21 2 2 4-4m3 3h7m-16 9 2 2 4-4m3 3h7" />
+                    </g>
+                </svg>
+            </span>
+            <h3>Form Kegiatan Terpandu</h3>
+            <p>Form dipandu langkah demi langkah sesuai sektor.</p>
+            <div class="feature-examples">
+                <p data-feature-example="tani"><strong>Contoh:</strong> pencatatan kegiatan tanam</p>
+                <p data-feature-example="ternak" hidden><strong>Contoh:</strong> pencatatan kegiatan ternak</p>
+                <p data-feature-example="ikan" hidden><strong>Contoh:</strong> pencatatan kegiatan budidaya</p>
+            </div>
+        </article>
+
+        <!-- 4. Foto, GPS & Waktu -->
+        <article class="k feature-card" tabindex="0">
+            <span class="icon-badge" aria-hidden="true">
+                <svg class="feature-icon" viewBox="0 0 48 48" focusable="false">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                        <path d="M6 15h8l3-5h14l3 5h8v25H6z" />
+                        <circle cx="24" cy="27" r="7" />
+                    </g>
+                </svg>
+            </span>
+            <h3>Foto, GPS &amp; Waktu</h3>
+            <p>Foto otomatis dilengkapi lokasi dan waktu sebagai bukti kegiatan.</p>
+            <div class="feature-examples">
+                <p data-feature-example="tani"><strong>Contoh:</strong> foto kegiatan lahan</p>
+                <p data-feature-example="ternak" hidden><strong>Contoh:</strong> foto kegiatan ternak</p>
+                <p data-feature-example="ikan" hidden><strong>Contoh:</strong> foto kegiatan budidaya</p>
+            </div>
+        </article>
+
+        <!-- 5. Analisis AI & Saran -->
+        <article class="k feature-card" tabindex="0">
+            <span class="icon-badge" aria-hidden="true">
+                <svg class="feature-icon" viewBox="0 0 48 48" focusable="false">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                        <path d="M24 6v36M24 12c-3-7-13-5-13 2-6 2-6 11 0 13-3 7 3 12 9 9l4-4m0-20c3-7 13-5 13 2 6 2 6 11 0 13 3 7-3 12-9 9l-4-4" />
+                        <path d="m17 18 3 3m11-3-3 3m-11 9 3-3m11 3-3-3" />
+                    </g>
+                </svg>
+            </span>
+            <h3>Analisis AI &amp; Saran</h3>
+            <p>AI membantu menampilkan kemungkinan masalah dan saran penanganan sesuai sektor. Hasilnya bersifat saran, bukan keputusan akhir.</p>
+            <div class="feature-examples">
+                <p data-feature-example="tani"><strong>Contoh:</strong> kemungkinan masalah tanaman</p>
+                <p data-feature-example="ternak" hidden><strong>Contoh:</strong> kemungkinan masalah ternak</p>
+                <p data-feature-example="ikan" hidden><strong>Contoh:</strong> kemungkinan masalah budidaya</p>
+            </div>
+        </article>
+
+        <!-- 6. Offline-first & Auto-sync -->
+        <article class="k feature-card" tabindex="0">
+            <span class="icon-badge" aria-hidden="true">
+                <svg class="feature-icon" viewBox="0 0 48 48" focusable="false">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                        <path d="M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0M12 19h.01M4 4l16 16" />
+                    </g>
+                </svg>
+            </span>
+            <h3>Offline-first &amp; Auto-sync</h3>
+            <p>Tetap bekerja di lokasi tanpa sinyal. Data terkirim otomatis saat koneksi kembali.</p>
+            <div class="feature-examples">
+                <p data-feature-example="tani"><strong>Contoh:</strong> mencatat di lahan yang jauh dari sinyal</p>
+                <p data-feature-example="ternak" hidden><strong>Contoh:</strong> mencatat di kandang yang sinyalnya lemah</p>
+                <p data-feature-example="ikan" hidden><strong>Contoh:</strong> mencatat di kolam atau tambak yang sulit sinyal</p>
+            </div>
+        </article>
+
+        <!-- 7. Dashboard & Peta -->
+        <article class="k feature-card" tabindex="0">
+            <span class="icon-badge" aria-hidden="true">
+                <svg class="feature-icon" viewBox="0 0 48 48" focusable="false">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                        <path d="m5 10 12-5 14 5 12-5v33l-12 5-14-5-12 5zM17 5v33m14-28v33" />
+                        <path d="M24 18a5 5 0 1 1 10 0c0 4-5 10-5 10s-5-6-5-10z" />
+                        <circle cx="29" cy="18" r="1" />
+                    </g>
+                </svg>
+            </span>
+            <h3>Dashboard &amp; Peta</h3>
+            <p>Pimpinan memantau kegiatan dan sebaran data lapangan.</p>
+            <div class="feature-examples">
+                <p data-feature-example="tani"><strong>Contoh:</strong> kegiatan dan sebaran data pertanian</p>
+                <p data-feature-example="ternak" hidden><strong>Contoh:</strong> kegiatan dan sebaran data peternakan</p>
+                <p data-feature-example="ikan" hidden><strong>Contoh:</strong> kegiatan dan sebaran data perikanan</p>
+            </div>
+        </article>
+
+        <!-- 8. Database Lapangan -->
+        <article class="k feature-card" tabindex="0">
+            <span class="icon-badge" aria-hidden="true">
+                <svg class="feature-icon" viewBox="0 0 48 48" focusable="false">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                        <ellipse cx="24" cy="9" rx="16" ry="5" />
+                        <path d="M8 9v30c0 3 7 6 16 6s16-3 16-6V9M8 19c0 3 7 6 16 6s16-3 16-6M8 29c0 3 7 6 16 6s16-3 16-6" />
+                    </g>
+                </svg>
+            </span>
+            <h3>Database Lapangan</h3>
+            <p>Data pelaku usaha, kelompok, lokasi, dan riwayat kegiatan tersimpan rapi dalam satu tempat.</p>
+            <div class="feature-examples">
+                <p data-feature-example="tani"><strong>Contoh:</strong> data petani, petak lahan, dan riwayat musim tanam</p>
+                <p data-feature-example="ternak" hidden><strong>Contoh:</strong> data peternak, kandang, dan riwayat perkembangan ternak</p>
+                <p data-feature-example="ikan" hidden><strong>Contoh:</strong> data pembudidaya, kolam atau tambak, dan riwayat tebar dan panen</p>
+            </div>
+        </article>
+
+        <!-- 9. Laporan PDF & Verifikasi -->
+        <article class="k feature-card" tabindex="0">
+            <span class="icon-badge" aria-hidden="true">
+                <svg class="feature-icon" viewBox="0 0 48 48" focusable="false">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6">
+                        <path d="M12 5h17l8 8v30H12zM29 5v9h8" />
+                        <path d="M18 23h12m-12 6h12m-12 6 4 4 8-8" />
+                    </g>
+                </svg>
+            </span>
+            <h3>Laporan PDF &amp; Verifikasi</h3>
+            <p>Laporan disusun, diperiksa koordinator, lalu dicetak sebagai PDF.</p>
+            <div class="feature-examples">
+                <p data-feature-example="tani"><strong>Contoh:</strong> laporan kegiatan pertanian</p>
+                <p data-feature-example="ternak" hidden><strong>Contoh:</strong> laporan kegiatan peternakan</p>
+                <p data-feature-example="ikan" hidden><strong>Contoh:</strong> laporan kegiatan perikanan</p>
+            </div>
+        </article>
+    </div>
+</div></section>
+
+<!-- SECTION: ALUR -->
+<section id="alur"><div class="w">
+    <div class="head">
+        <span class="pill">Informasi</span>
+        <h2>Alur Agrovoice <em>lintas sektor</em></h2>
+        <p>Dari lapangan sampai laporan resmi, hanya empat langkah sederhana.</p>
+    </div>
+    <div class="steps">
+        <div class="step">
+            <h3>Bicara di lapangan</h3>
+            <p>Petugas berkunjung dan cukup berbicara dalam Bahasa Jawa atau Indonesia, tanpa mengetik.</p>
+        </div>
+        <div class="step">
+            <h3>Laporan jadi otomatis</h3>
+            <p>Suara diubah menjadi teks laporan terstruktur. Tetap bekerja tanpa sinyal di sawah, kandang, atau kolam.</p>
+        </div>
+        <div class="step">
+            <h3>AI menganalisis</h3>
+            <p>Sistem mengenali hama atau penyakit dan menampilkan SOP langkah penanganan.</p>
+        </div>
+        <div class="step">
+            <h3>Terverifikasi di Web Admin</h3>
+            <p>Data tersinkron saat ada sinyal. Suara asli bisa diputar, dan laporan PDF dilengkapi foto dan GPS.</p>
+        </div>
+    </div>
+</div></section>
+
+<!-- SECTION: FLYER GALLERY -->
+<section id="galeri"><div class="w">
+    <div class="head">
+        <span class="pill">Flyer</span>
+        <h2>Materi <em>Flyer</em> Agrovoice</h2>
+        <p>Pilih sektor untuk melihat materi flyer yang sesuai.</p>
+    </div>
+    <div class="gallery-tabs" role="tablist" aria-label="Pilih sektor flyer">
+        <button class="gallery-tab" id="gallery-tab-tani" type="button" role="tab" aria-controls="gallery" aria-selected="true" tabindex="0" data-theme-choice="tani">
+            <span aria-hidden="true">🌾</span>
+            <span>Pertanian</span>
+        </button>
+        <button class="gallery-tab" id="gallery-tab-ternak" type="button" role="tab" aria-controls="gallery" aria-selected="false" tabindex="-1" data-theme-choice="ternak">
+            <span aria-hidden="true">🐄</span>
+            <span>Peternakan</span>
+        </button>
+        <button class="gallery-tab" id="gallery-tab-ikan" type="button" role="tab" aria-controls="gallery" aria-selected="false" tabindex="-1" data-theme-choice="ikan">
+            <span aria-hidden="true">🐟</span>
+            <span>Perikanan</span>
+        </button>
+    </div>
+    <div class="gwrap">
+        <button class="nav prev" type="button" aria-label="Sebelumnya">&#8249;</button>
+        <button class="nav next" type="button" aria-label="Berikutnya">&#8250;</button>
+        <div id="gallery" role="tabpanel" aria-labelledby="gallery-tab-tani" tabindex="0">
+            <!-- Pertanian Flyers -->
+            <article class="fl" data-sector="tani">
+                <button class="img" type="button"><img src="./storage/uploads/1nv1R7KbLlSLfHK0FQ3n8j1vgfLgYWnMqrfmy5uw.jpg" alt="Flyer Kalender Tanam &amp; Cuaca Ekstrem" loading="lazy"></button>
+                <h3>Flyer Kalender Tanam &amp; Cuaca Ekstrem</h3>
+                <p>Panduan waktu tanam dan antisipasi perubahan iklim untuk menjaga ketahanan pangan dan hasil panen.</p>
+            </article>
+            <article class="fl" data-sector="tani">
+                <button class="img" type="button"><img src="./storage/uploads/5YgnCanGVs9Cc9nBxawpJWRewSDm5iZ0pchOZrAf.jpg" alt="Flyer Panduan Pemupukan Berimbang Padi" loading="lazy"></button>
+                <h3>Flyer Panduan Pemupukan Berimbang Padi</h3>
+                <p>Tata cara aplikasi pupuk urea, NPK, dan organik untuk kesuburan tanah dan efisiensi biaya petani.</p>
+            </article>
+            <article class="fl" data-sector="tani">
+                <button class="img" type="button"><img src="./storage/uploads/A8emWWJS7WxI2lZPYe9ZrejxIUEk3FZVBxx6jepq.jpg" alt="Flyer Pengendalian Hama Terpadu (PHT)" loading="lazy"></button>
+                <h3>Flyer Pengendalian Hama Terpadu (PHT)</h3>
+                <p>Strategi monitoring OPT, musuh alami, dan penggunaan pestisida nabati yang aman dan ramah lingkungan.</p>
+            </article>
+            <article class="fl" data-sector="tani">
+                <button class="img" type="button"><img src="./storage/uploads/bj5vFXI7IwL5JK38Ayt3tWo1wR3VvDtT2SQFiFzK.jpg" alt="Flyer Seleksi Benih Bersertifikat" loading="lazy"></button>
+                <h3>Flyer Seleksi Benih Bersertifikat</h3>
+                <p>Kiat mengenali label varietas unggul tahan hama dan cara perlakuan benih sebelum disemai.</p>
+            </article>
+            <article class="fl" data-sector="tani">
+                <button class="img" type="button"><img src="./storage/uploads/e3BGPPKp8FNOdOBSJvb6NZ3kidgIudAoqm06d4PT.jpg" alt="Flyer Manajemen Irigasi Hemat Air" loading="lazy"></button>
+                <h3>Flyer Manajemen Irigasi Hemat Air</h3>
+                <p>Penerapan sistem irigasi berselang (intermittent) untuk menghemat air dan mencegah kebusukan akar.</p>
+            </article>
+            <article class="fl" data-sector="tani">
+                <button class="img" type="button"><img src="./storage/uploads/EGR5TYODISo9G1VnpJCpThUpy5IG4AWN7dyP63ER.jpg" alt="Flyer Voice-to-Report untuk Petani" loading="lazy"></button>
+                <h3>Flyer Voice-to-Report untuk Petani</h3>
+                <p>Cara praktis mencatat kondisi tanaman cukup dengan suara menggunakan aplikasi Agrovoice.</p>
+            </article>
+
+            <!-- Peternakan Flyers -->
+            <article class="fl" data-sector="ternak">
+                <button class="img" type="button"><img src="./storage/uploads/HvLx7WDbuuz2SRfhCkM70eyktNiCQczoHAAqxZXg.jpg" alt="Flyer Sanitasi dan Biosekuriti Kandang" loading="lazy"></button>
+                <h3>Flyer Sanitasi dan Biosekuriti Kandang</h3>
+                <p>Standar kebersihan kandang, desinfeksi rutin, dan isolasi hewan ternak baru untuk mencegah penularan penyakit.</p>
+            </article>
+            <article class="fl" data-sector="ternak">
+                <button class="img" type="button"><img src="./storage/uploads/I2aV63shIi5aKlt8IAydQJTABFDJGH3Q5M5xIWU6.jpg" alt="Flyer Jadwal Vaksinasi &amp; Vitamin Ternak" loading="lazy"></button>
+                <h3>Flyer Jadwal Vaksinasi &amp; Vitamin Ternak</h3>
+                <p>Kalender berkala pemberian vaksin PMK, antraks, serta suplemen penambah nafsu makan sapi dan kambing.</p>
+            </article>
+            <article class="fl" data-sector="ternak">
+                <button class="img" type="button"><img src="./storage/uploads/IIr73LodYuKd612WTIHug5XTxNRONuRKXbokd6p8.jpg" alt="Flyer Silase &amp; Pengolahan Pakan Fermentasi" loading="lazy"></button>
+                <h3>Flyer Silase &amp; Pengolahan Pakan Fermentasi</h3>
+                <p>Memanfaatkan jerami padi dan limbah pertanian menjadi pakan awetan bergizi tinggi saat musim kemarau.</p>
+            </article>
+            <article class="fl" data-sector="ternak">
+                <button class="img" type="button"><img src="./storage/uploads/jC4ZogwRoNPhgXOoG8aHdnLIX3hvO5cF24nB9kMk.jpg" alt="Flyer Deteksi Dini Penyakit Mulut &amp; Kuku" loading="lazy"></button>
+                <h3>Flyer Deteksi Dini Penyakit Mulut &amp; Kuku</h3>
+                <p>Kenali gejala awal hipersalivasi, lepuh pada kuku dan lidah, serta SOP penanganan pertama darurat.</p>
+            </article>
+            <article class="fl" data-sector="ternak">
+                <button class="img" type="button"><img src="./storage/uploads/JfvBmfmHG9CcUMszENwWd3mCc127A6geL7EeLVuJ.jpg" alt="Flyer Budidaya Ayam &amp; Unggas Sehat" loading="lazy"></button>
+                <h3>Flyer Budidaya Ayam &amp; Unggas Sehat</h3>
+                <p>Manajemen pemeliharaan anak ayam (DOC), pengaturan ventilasi kandang, dan pencegahan flu burung.</p>
+            </article>
+            <article class="fl" data-sector="ternak">
+                <button class="img" type="button"><img src="./storage/uploads/jteeiMXuLBr5i1b6DOr2LRfE1exBcnO7DQgkcPug.jpg" alt="Flyer Pencatatan Riwayat Ternak Berbasis Suara" loading="lazy"></button>
+                <h3>Flyer Pencatatan Riwayat Ternak Berbasis Suara</h3>
+                <p>Catat kelahiran, bobot ternak, dan riwayat suntik vitamin tanpa repot menulis di kandang.</p>
+            </article>
+
+            <!-- Perikanan Flyers -->
+            <article class="fl" data-sector="ikan">
+                <button class="img" type="button"><img src="./storage/uploads/MHGvBPtJTvHZSA9Gzev4hVkcyIrile0rXfCieKxR.jpg" alt="Flyer Manajemen Kualitas Air Tambak &amp; Kolam" loading="lazy"></button>
+                <h3>Flyer Manajemen Kualitas Air Tambak &amp; Kolam</h3>
+                <p>Parameter penting kadar oksigen terlarut (DO), pH, salinitas, dan suhu air untuk kelangsungan hidup bibit.</p>
+            </article>
+            <article class="fl" data-sector="ikan">
+                <button class="img" type="button"><img src="./storage/uploads/NvcRgRTY4Bf6QgjENxe9myj3NYlvKZtXdU2fpLL2.jpg" alt="Flyer Padat Tebar &amp; Waktu Pakan Ikan" loading="lazy"></button>
+                <h3>Flyer Padat Tebar &amp; Waktu Pakan Ikan</h3>
+                <p>Kalkulasi FCR (Feed Conversion Ratio) dan jadwal pemberian pakan tepat waktu agar ikan tumbuh seragam.</p>
+            </article>
+            <article class="fl" data-sector="ikan">
+                <button class="img" type="button"><img src="./storage/uploads/o4u0doLm5tC025lI2hHm2CPgJmLfYfL0MrvC0Tpc.jpg" alt="Flyer Pencegahan Jamur &amp; Parasit Ikan Air Tawar" loading="lazy"></button>
+                <h3>Flyer Pencegahan Jamur &amp; Parasit Ikan Air Tawar</h3>
+                <p>Identifikasi jamur Saprolegnia dan bintik putih (Ich) serta terapi perendaman garam ikan secara higienis.</p>
+            </article>
+            <article class="fl" data-sector="ikan">
+                <button class="img" type="button"><img src="./storage/uploads/oY4pF72KswRpD3OAG2gEIbvLblhYg1nkcCEsZeSH.jpg" alt="Flyer Budidaya Udang &amp; Kepiting Ramah Lingkungan" loading="lazy"></button>
+                <h3>Flyer Budidaya Udang &amp; Kepiting Ramah Lingkungan</h3>
+                <p>Teknologi tambak intensif hemat air, perlakuan probiotik pengurai limbah, dan pencegahan kematian dini.</p>
+            </article>
+            <article class="fl" data-sector="ikan">
+                <button class="img" type="button"><img src="./storage/uploads/yLyoc51KTsczZhpWsM3Q3sLcyuItvdKOs11jrc6s.jpg" alt="Flyer Formulasi Pakan Mandiri Murah Berkualitas" loading="lazy"></button>
+                <h3>Flyer Formulasi Pakan Mandiri Murah Berkualitas</h3>
+                <p>Pemanfaatan tepung ikan, bungkil kedelai, dan dedak halus untuk menekan biaya pakan budidaya air tawar.</p>
+            </article>
+            <article class="fl" data-sector="ikan">
+                <button class="img" type="button"><img src="./storage/uploads/ydzVhGgODCz5Ns0xPwBBFUsyP8mF3gyeYETSogw1.jpg" alt="Flyer Pelaporan Panen &amp; Monitoring Budidaya" loading="lazy"></button>
+                <h3>Flyer Pelaporan Panen &amp; Monitoring Budidaya</h3>
+                <p>Catat tonase panen, sampling bobot mingguan, dan data kematian ikan langsung dengan suara di tepi kolam.</p>
+            </article>
+
+            <p class="gallery-empty" data-gallery-empty role="status" hidden>Flyer sektor ini segera hadir.</p>
+        </div>
+        <div class="dots" id="dots"></div>
+    </div>
+</div></section>
+
+<!-- SECTION: BERITA TERBARU -->
+<section id="berita"><div class="w">
+    <div class="head">
+        <span class="pill">Lintas sektor</span>
+        <h2>Berita <em>Terbaru</em></h2>
+        <p>Artikel terbaru seputar pertanian, peternakan, dan perikanan.</p>
+    </div>
+    <div class="news-grid">
+        <a class="news-card" href="./artikel/panduan-pengendalian-hama-wereng-batang-cokelat.html">
+            <img src="./storage/uploads/4zEFmaHCAZ2bmovZmSywfGIXXb71VJSsMDUxycIv.jpg" alt="Sampul: Panduan Pengendalian Hama Wereng Batang Cokelat" loading="lazy">
+            <div class="body">
+                <div class="meta"><span class="category">Tips Tani</span><time>15 November 2026</time></div>
+                <h3>Panduan Pengendalian Hama Wereng Batang Cokelat secara Terpadu</h3>
+                <p>Langkah antisipasi dan strategi pencegahan dini serangan wereng cokelat pada tanaman padi menggunakan metode PHT dan pemanfaatan musuh alami.</p>
+            </div>
+        </a>
+
+        <a class="news-card" href="./artikel/manajemen-pakan-dan-nutrisi-penggemukan-sapi-potong.html">
+            <img src="./storage/uploads/NWUG9FnmJvb38UtLgkBaJlnr8Fmnen23uISOzxZZ.jpg" alt="Sampul: Manajemen Pakan dan Nutrisi untuk Penggemukan Sapi Potong" loading="lazy">
+            <div class="body">
+                <div class="meta"><span class="category">Tips Ternak</span><time>14 November 2026</time></div>
+                <h3>Manajemen Pakan dan Nutrisi untuk Penggemukan Sapi Potong</h3>
+                <p>Formula pakan konsentrat seimbang dan hijauan bermutu tinggi untuk mempercepat pertambahan bobot harian sapi secara optimal.</p>
+            </div>
+        </a>
+
+        <a class="news-card" href="./artikel/penerapan-sistem-bioflok-efisiensi-budidaya-ikan.html">
+            <img src="./storage/uploads/WBHUBkasxUZCftGASk62BLk2WdocP0kB3M8eNliS.jpg" alt="Sampul: Penerapan Sistem Bioflok untuk Efisiensi Budidaya Ikan Nila dan Lele" loading="lazy">
+            <div class="body">
+                <div class="meta"><span class="category">Tips Perikanan</span><time>12 November 2026</time></div>
+                <h3>Penerapan Sistem Bioflok untuk Efisiensi Budidaya Ikan Nila dan Lele</h3>
+                <p>Optimasi penggunaan lahan sempit dan efisiensi pakan hingga 30% dengan memanfaatkan mikroorganisme pengurai dalam kolam terpal bulat.</p>
+            </div>
+        </a>
+    </div>
+    <div class="news-more"><a class="btn" href="berita.html">Lihat semua berita</a></div>
+</div></section>
+
+<!-- SECTION: FAQ -->
+<section class="cream" id="faq"><div class="w">
+    <div class="head">
+        <span class="pill">FAQ</span>
+        <h2>Pertanyaan yang <em>sering diajukan</em></h2>
+    </div>
+    <details>
+        <summary>Sektor apa saja yang dibahas?</summary>
+        <p>Agrovoice mencakup 3 sektor terintegrasi: pertanian, peternakan, dan perikanan.</p>
+    </details>
+    <details>
+        <summary>Bagaimana mencari artikel berdasarkan sektor?</summary>
+        <p>Gunakan filter kategori (Tips Tani, Tips Ternak, Tips Perikanan, Berita Dinas, Update Agrovoice) serta kolom pencarian di halaman Berita.</p>
+    </details>
+    <details>
+        <summary>Bagaimana cara menghubungi Agrovoice?</summary>
+        <p>Hubungi kami melalui WhatsApp menggunakan tombol kontak di halaman ini atau melalui nomor resmi yang tertera di bagian footer.</p>
+    </details>
+    <details>
+        <summary>Apakah Agrovoice dapat bekerja tanpa jaringan internet?</summary>
+        <p>Ya, Agrovoice dirancang secara offline-first. Pencatatan dan rekaman suara di lapangan tetap berjalan tanpa sinyal, lalu tersinkronisasi otomatis saat terhubung kembali.</p>
+    </details>
+</div></section>
+
+<!-- SECTION: KONTAK -->
+<section class="cta" id="kontak"><div class="w">
+    <h2>Terhubung dengan <em>Agrovoice</em></h2>
+    <p>Hubungi kami untuk pertanyaan seputar Agrovoice dan sektor yang dibahas.</p>
+    <a class="btn" href="https://wa.me/6285604118932?text=Halo,%20saya%20tertarik%20dengan%20Agrovoice" target="_blank" rel="noopener">Hubungi via WhatsApp</a>
+</div></section>
+</main>
+
+<footer>
+    <div class="w">
+        <div><b>Agrovoice</b></div>
+        <address class="footer-contact">
+            <strong class="footer-title">Kontak</strong>
+            <span><strong>Nama:</strong> Bari'ur Ro'if Aflah</span>
+            <span><strong>No. Telepon:</strong> <a href="tel:+6282342982905">+62 823 4298 2905</a></span>
+        </address>
+        <address class="footer-contact">
+            <strong class="footer-title">Perusahaan</strong>
+            <span>CV Rozitech Multimedia Indonesia</span>
+            <span><strong>Alamat:</strong> Desa Leran, Kec. Manyar, Kabupaten Gresik</span>
+        </address>
+        <small class="footer-copy">&copy; 2026 Agrovoice</small>
+    </div>
+</footer>
+
+<a class="wa" href="https://wa.me/6285604118932?text=Halo,%20saya%20tertarik%20dengan%20Agrovoice" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.2 2 11.5c0 2.2.8 4.200 2.100 5.800L3 22l4.900-1.700c1.300.5 2.700.7 4.100.7 5.500 0 10-4.200 10-9.500S17.500 2 12 2Z"/></svg>
+    <span>Chat WhatsApp</span>
+</a>
+</body>
+</html>

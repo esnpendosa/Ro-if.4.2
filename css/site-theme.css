@@ -1,0 +1,92 @@
+:root {
+    --b1: #bcefa8;
+    --b2: #e8f8dc;
+    --ink: #203d2a;
+    --ac: #91cf6b;
+    --ac-dark: #40673d;
+    --soft: #eff8e9;
+    --ground: #fffef9;
+    --card: #fff;
+    --frame: #15221b;
+    --head: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+    --body: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --art-leaf: #4a9a45;
+    --art-cow: #f2efe5;
+    --art-goat: #d3a46f;
+    --art-bird: #e8a345;
+    --art-fish: #f28555;
+    --art-shell: #69b49a;
+    --art-coral: #ed8b72;
+    color-scheme: light;
+}
+
+body[data-theme="tani"] {
+    --b1: #b8ef9f;
+    --b2: #e8f9da;
+    --ink: #1d3b29;
+    --ac: #91cf6b;
+    --ac-dark: #40673d;
+    --soft: #f0f8e9;
+    --ground: #fffef9;
+    --art-leaf: #4a9a45;
+    --art-cow: #f2efe5;
+    --art-goat: #d3a46f;
+    --art-bird: #e8a345;
+    --art-fish: #f28555;
+    --art-shell: #69b49a;
+    --art-coral: #ed8b72;
+}
+
+body[data-theme="ternak"] {
+    --b1: #ffda7c;
+    --b2: #fff0c6;
+    --ink: #49341d;
+    --ac: #f0bb62;
+    --ac-dark: #7b5d32;
+    --soft: #fff5df;
+    --ground: #fffdf7;
+    --art-leaf: #699345;
+    --art-cow: #fff8e9;
+    --art-goat: #bc8650;
+    --art-bird: #cf732d;
+    --art-fish: #358e9e;
+    --art-shell: #5da991;
+    --art-coral: #da8565;
+}
+
+body[data-theme="ikan"] {
+    --b1: #8edfff;
+    --b2: #d9f6ff;
+    --ink: #173a4a;
+    --ac: #6bc6e8;
+    --ac-dark: #306479;
+    --soft: #eaf8fc;
+    --ground: #fbfeff;
+    --art-leaf: #438d70;
+    --art-cow: #f0f2ec;
+    --art-goat: #c99c71;
+    --art-bird: #e2a04b;
+    --art-fish: #f07d52;
+    --art-shell: #58a895;
+    --art-coral: #e77e70;
+}
+
+body {
+    --muted: color-mix(in srgb, var(--ink) 72%, var(--ground));
+    --line: color-mix(in srgb, var(--ink) 15%, var(--ground));
+    --surface: var(--ground);
+    --accent-soft: color-mix(in srgb, var(--ac) 18%, var(--ground));
+    --shadow: 0 10px 30px color-mix(in srgb, var(--ink) 12%, transparent);
+    --shadow-strong: 0 16px 38px color-mix(in srgb, var(--ink) 18%, transparent);
+}
+
+footer,
+footer * {
+    font-weight: 700;
+}
+
+footer b,
+footer strong,
+footer .footer-title {
+    font-weight: 800;
+}

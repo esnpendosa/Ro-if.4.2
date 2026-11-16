@@ -1,0 +1,80 @@
+:root{--ink:#16532f;--ac:#2e9e5b;--ac-text:#1f7a45;--yellow:#f5c350;--border:#e3efe6;--muted:#4f6b58;--red:#a64444;--red-bg:#fff0f0;--paper:#fff;--soft:#f1faf3;--head:"Baloo 2","Trebuchet MS",sans-serif;--body:"Nunito",sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--soft);color:var(--ink);font:16px/1.6 var(--body)}
+h1,h2,h3{font-family:"Baloo 2","Trebuchet MS",sans-serif;color:var(--ink);line-height:1.15;margin:0}
+a{color:inherit}
+.shell{max-width:1220px;margin:0 auto;padding:24px}
+.panel{background:var(--paper);border:1px solid var(--border);border-radius:20px;box-shadow:0 10px 30px rgba(22,83,47,.06);padding:26px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 21px var(--head)}
+.brand img,.login-logo{width:48px;height:48px;object-fit:contain}
+.page-heading{text-align:right}
+.eyebrow{display:block;color:var(--ac-text);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.page-heading h1{font-size:clamp(25px,4vw,34px)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;padding:10px;margin-bottom:22px;border:1px solid var(--border);border-radius:16px;background:var(--paper);box-shadow:0 6px 20px rgba(22,83,47,.05)}
+.tab{border-radius:999px;padding:8px 15px;text-decoration:none;color:var(--muted);font-weight:800}
+.tab.active{background:var(--ink);color:#fff}
+.tab:hover:not(.active){background:#e8f6ec;color:var(--ink)}
+.tab-form{margin:0}.tab.logout{border:0;background:transparent;color:var(--muted);font:800 14px var(--body);cursor:pointer}
+.message{border-radius:12px;padding:12px 16px;margin:0 0 18px;background:#e8f6ec;color:var(--ink)}
+.message.error{background:var(--red-bg);border:1px solid #f1caca;color:var(--red)}
+.admin-layout{display:grid;grid-template-columns:minmax(290px,360px) minmax(0,1fr);gap:22px;align-items:start}
+.editor,.listing{min-width:0;padding:22px;border:1px solid var(--border);border-radius:20px;background:var(--paper);box-shadow:0 10px 30px rgba(22,83,47,.06)}
+.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}
+.section-head h2{font-size:24px}
+label{display:block;font-weight:800;margin:14px 0 6px}
+input[type=text],input[type=password],textarea{display:block;width:100%;border:1px solid #d4e2d6;border-radius:11px;padding:11px 12px;color:var(--ink);background:#fff;font:inherit}
+select{display:block;width:100%;border:1px solid var(--border);border-radius:11px;padding:11px 12px;color:var(--ink);background:var(--paper);font:inherit}
+input:focus,textarea:focus{outline:3px solid rgba(46,158,91,.18);border-color:var(--ac)}
+select:focus{outline:3px solid color-mix(in srgb,var(--ac) 18%,transparent);border-color:var(--ac)}
+textarea{resize:vertical;min-height:112px}
+.sector-filter{display:flex;align-items:end;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+.sector-filter>div{flex:1 1 180px;min-width:0}
+.sector-filter label{margin:0 0 6px}
+.sector-filter button{flex:0 0 auto}
+.sector-label{align-self:flex-start;border-radius:999px;padding:4px 10px;background:var(--soft);color:var(--ink);font-size:12px;font-weight:800}
+.field-hint{display:block;margin-top:-8px;color:var(--muted);font-size:12px}
+.all-sectors-badge{align-self:flex-start;border-radius:999px;padding:4px 10px;background:#fff0c2;color:#7a4b00;font-size:12px;font-weight:800}
+.counter{display:block;text-align:right;font-size:12px;color:var(--muted);margin-top:-8px;margin-bottom:10px}
+.drop{display:grid;place-items:center;min-height:155px;border:2px dashed #9bcbaa;border-radius:14px;background:#f5fbf6;text-align:center;padding:12px;cursor:pointer;overflow:hidden}
+.drop.drag{background:#e8f6ec;border-color:var(--ac)}
+.drop input{position:absolute;width:1px;height:1px;opacity:0}
+.drop-copy{font-weight:700;color:var(--muted)}
+.drop-copy strong{display:block;color:var(--ink);margin-bottom:3px}
+.preview{display:none;max-width:100%;max-height:210px;object-fit:contain;border-radius:10px}
+.drop.has-preview .preview{display:block}.drop.has-preview .drop-copy{display:none}
+.buttons{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:16px}
+button,.button{border:0;border-radius:10px;padding:10px 15px;font:800 14px "Nunito",sans-serif;text-decoration:none;cursor:pointer}
+button.primary,.button.primary{background:var(--yellow);color:var(--ink)}
+button.secondary,.button.secondary{background:var(--ac-text);color:#fff}
+button.danger,.button.danger{background:#fde8e8;color:var(--red)}
+button.soft{background:#edf6ef;color:var(--ink)}
+button:disabled{opacity:.42;cursor:not-allowed}
+.count{background:#e8f6ec;color:var(--ink);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:800;white-space:nowrap}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;align-items:stretch}
+.card{display:flex;flex-direction:column;gap:10px;min-width:0;border:1px solid var(--border);border-radius:16px;padding:12px;background:#fff;box-shadow:0 6px 20px rgba(22,83,47,.06)}
+.card-cover{width:100%;aspect-ratio:4/5;position:relative;overflow:hidden;background:#fff6e0;border-radius:16px}
+.card-cover img{display:block;width:100%;height:100%;object-fit:contain}
+.card-cover .image-missing{display:grid;place-items:center;width:100%;height:100%;padding:16px;background:#e5e7eb;color:#4b5563;text-align:center;font-weight:800}
+.card-title{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;min-height:2.4em;font:800 18px/1.2 "Baloo 2","Trebuchet MS",sans-serif;overflow-wrap:anywhere}
+.badge{position:absolute;top:10px;left:10px;z-index:1;background:#e8f6ec;color:var(--ac-text);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:800}
+.badge.hidden{background:#f1f2f1;color:#657168}
+.badge.missing{right:10px;left:auto;background:#b42318;color:#fff}
+.description{color:#4f6b58;font-size:14px;line-height:1.4;margin:0;overflow-wrap:anywhere}
+.card-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.card-actions form{display:flex;margin:0}
+.card-actions button,.card-actions .button{padding:6px 12px;font-size:13px;white-space:nowrap}
+.card-actions .quick-sector-form{display:flex;flex:1 1 100%;align-items:center;gap:6px}
+.quick-sector-form select{flex:1;min-width:0;padding:6px 8px;font-size:13px}
+.quick-sector-form button{flex:0 0 auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.empty{grid-column:1/-1;color:var(--muted);background:#f7faf7;border-radius:14px;padding:26px;text-align:center}
+.login-wrap{min-height:calc(100vh - 48px);display:grid;place-items:center}
+.login{width:min(100%,420px);text-align:center;padding:34px}
+.login-logo{width:72px;height:72px;margin:0 auto 10px}
+.login h1{font-size:30px;margin-bottom:5px}
+.login p{color:var(--muted);margin:0 0 20px}
+.login form{text-align:left}
+.login button{width:100%;margin-top:5px}
+@media(max-width:900px){.admin-layout{grid-template-columns:1fr}}
+@media(max-width:600px){.shell{padding:14px}.panel{padding:17px}.topbar{align-items:flex-start}.brand{font-size:18px}.brand img{width:42px;height:42px}.page-heading h1{font-size:25px}.tabs{gap:4px;padding:8px}.tab{padding:7px 10px;font-size:13px}.editor,.listing{padding:16px}.cards{grid-template-columns:1fr}.login-wrap{min-height:calc(100vh - 24px)}.login{padding:26px 20px}}
